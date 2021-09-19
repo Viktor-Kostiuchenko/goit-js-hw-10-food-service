@@ -12,9 +12,9 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.cardListMarkup=void 0;var e=t(require("./menu.json")),r=t(require("../templates/cards.hbs"));function t(e){return e&&e.__esModule?e:{default:e}}const s=e=>(0,r.default)(e),u=s(e.default);exports.cardListMarkup=u;
 },{"./menu.json":"NkM5","../templates/cards.hbs":"fpKt"}],"keXy":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.onChangeThemeClick=void 0;var e=require("./refs");const t={LIGHT:"light-theme",DARK:"dark-theme"};let o=localStorage.getItem("mode");const r=(e,t)=>{document.body.classList.add(e),document.body.classList.remove(t)},l=()=>{r(t.DARK,t.LIGHT),localStorage.setItem("mode","dark"),e.refs.tumbler.checked=!0},c=()=>{r(t.LIGHT,t.DARK),localStorage.setItem("mode","light"),e.refs.tumbler.checked};"dark"===o&&l();const s=()=>{"dark"!==(o=localStorage.getItem("mode"))?l():(r(t.LIGHT,t.DARK),localStorage.setItem("mode","light"),e.refs.tumbler.checked)};exports.onChangeThemeClick=s;
-},{"./refs":"VyiV"}],"Tnu0":[function(require,module,exports) {
+},{"./refs":"VyiV"}],"krre":[function(require,module,exports) {
 
 },{}],"Focm":[function(require,module,exports) {
-"use strict";var e=require("./js/refs"),r=require("./js/card-list"),s=require("./js/theme-switcher");require("./styles.css"),e.refs.cardList.insertAdjacentHTML("beforeend",r.cardListMarkup),e.refs.themeSwitcher.addEventListener("change",s.onChangeThemeClick);
-},{"./js/refs":"VyiV","./js/card-list":"eWcr","./js/theme-switcher":"keXy","./styles.css":"Tnu0"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.5517d2fc.js.map
+"use strict";var e=require("./js/refs"),r=require("./js/card-list"),s=require("./js/theme-switcher");require("./css/styles.css"),e.refs.cardList.insertAdjacentHTML("beforeend",r.cardListMarkup),e.refs.themeSwitcher.addEventListener("change",s.onChangeThemeClick);
+},{"./js/refs":"VyiV","./js/card-list":"eWcr","./js/theme-switcher":"keXy","./css/styles.css":"krre"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.e2a603aa.js.map
