@@ -1,7 +1,7 @@
 import { refs } from './js/refs'
 import { cardListMarkup } from './js/card-list'
 import { onChangeThemeClick } from './js/theme-switcher'
-import './styles.css'
+import './css/styles.css'
 
 
 // СОЗДАЕМ КАРТОЧКИ МЕНЮ НА СТРАНИЦЕ
